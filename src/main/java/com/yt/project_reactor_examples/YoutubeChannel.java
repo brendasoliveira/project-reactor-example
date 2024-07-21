@@ -2,6 +2,7 @@ package com.yt.project_reactor_examples;
 
 import reactor.core.publisher.Flux;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class YoutubeChannel {
@@ -10,6 +11,10 @@ public class YoutubeChannel {
 
     public YoutubeChannel(List<Video> videos) {
         this.videos = videos;
+    }
+
+    public YoutubeChannel() {
+        this.videos = new ArrayList<>();
     }
 
     public void addVideo(Video video) {

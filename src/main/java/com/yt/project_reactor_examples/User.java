@@ -19,7 +19,7 @@ public class User implements Subscriber<Video> {
 
     @Override
     public void onNext(Video o) {
-        System.out.println("onNext("+o+")");
+        System.out.println("onNext("+o.getName()+")");
     }
 
     @Override

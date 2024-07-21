@@ -4,10 +4,10 @@ public class Video {
 
     private String name;
     private String description;
-    private String likes;
-    private String views;
+    private Integer likes;
+    private Integer views;
 
-    public Video(String name, String description, String likes, String views) {
+    public Video(String name, String description, Integer likes, Integer views) {
         this.name = name;
         this.description = description;
         this.likes = likes;
@@ -30,19 +30,19 @@ public class Video {
         this.description = description;
     }
 
-    public String getViews() {
+    public Integer getViews() {
         return views;
     }
 
-    public void setViews(String views) {
+    public void setViews(Integer views) {
         this.views = views;
     }
 
-    public String getLikes() {
+    public Integer getLikes() {
         return likes;
     }
 
-    public void setLikes(String likes) {
+    public void setLikes(Integer likes) {
         this.likes = likes;
     }
 }
